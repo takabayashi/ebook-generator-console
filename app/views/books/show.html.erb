@@ -23,12 +23,12 @@
     <dd><%= @book.attachment_path %></dd>
   <% end %>
   
-  <% unless @book.attachment_path.empty? %>
+  <% unless @book.metadata == nil || @book.metadata.empty? %>
     <dt><strong><%= model_class.human_attribute_name(:metadata) %>:</strong></dt>
     <dd><%= @book.metadata %></dd>
   <% end %>
 
-  <% unless @book.attachment_path.empty? %>
+  <% unless @book.images_path == nil || @book.images_path.empty? %>
     <dt><strong><%= model_class.human_attribute_name(:images_path) %>:</strong></dt>
     <dd><%= @book.images_path %></dd>
   <% end %>
