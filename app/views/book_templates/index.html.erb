@@ -6,7 +6,6 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:title) %></th>
-      <th><%= model_class.human_attribute_name(:book_qt) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
     </tr>
@@ -15,7 +14,6 @@
     <% @book_templates.each do |book_template| %>
       <tr>
         <td><%= link_to book_template.title, book_template_path(book_template) %></td>
-        <td><%= book_template.book_qt.to_i %></td>
         <td><%= book_template.created_at.to_date %></td>
         <td>
           <%= link_to t('.edit', :default => t("helpers.links.edit")),
