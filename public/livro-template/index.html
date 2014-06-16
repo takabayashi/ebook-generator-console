@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+  	<link rel="stylesheet" href="style/simples.css" type="text/css" />
+  	<link rel="stylesheet" href="style/controles.css" type="text/css" />
+  	<link rel="stylesheet" href="style/modal.css" type="text/css" />
+  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  	<title>Livro</title>
+  </head>
+  <body>
+  	<div id="divPrincipal" class="center">
+  		<div id="divControles">
+  			<div id="capa"  class="controleHome">
+  			</div>
+  			
+  			<div id="back"  class="controleLeft">
+  			</div>
+  			
+  			<div id="next"  class="controleRigth">
+  			</div>
+  			
+  			<div id="zoomIn"  class="controleZoomIn">
+  			</div>
+  			
+  			<div id="zoomOut"  class="controleZoomOut">
+  			</div>
+  			
+  			<div id="zoomFit"  class="controleZoomFit">
+  			</div>
+  			
+  			<div id="paginaAtual"  class="controlePaginaAtual">
+  				<input id="numPagina" class="controleNumPaginaAtual"/>
+  			</div>
+  			
+  			<div id="qtdPaginas"  class="controleQtdPaginas">
+  			</div>
+  			
+  			<div id="lm" class="controleLm">
+  			</div>
+  			
+  			<div id="mp" class="controleMp">
+  			</div>
+  		</div>
+  		
+		<div id="divControleOED">
+			<div id="fechar" class="controleAbreObEduc">
+			</div>
+			
+			<div id="listaOED">
+			</div>
+		</div>
+
+  		<div id="divConteudo">
+	    	<div id="divOED">
+	    		<a href="#divModalDialog" onclick="loadIFrame();" ><img id="iconeOED" src="images/link.png" style="display:none"/></a>
+			</div>
+			
+	    	<canvas id="canvasPagina" >
+	     	    Browser não suporta Canvas!!!
+	     	</canvas>
+	     	
+	     	<div id="divSumario" class="divSumario">
+		
+			</div>
+     	</div>
+    </div>
+    
+	<div id="divModalDialog" class="modalDialog" >
+		<div id="divContainer">
+			<a id='modalCloseLink' href="#close" title="Close" class="close">X</a>
+			<iframe src="" name="iframe_a" id="iframe_a" class="center" tabindex="0">Browser não suporta iFrames!!!</iframe>
+		</div>
+	</div>
+	
+	<script src="js/modernizr-latest.js"></script>
+	<script src="js/configurator.js"></script>
+	<script src="js/simples.js"></script>
+	<script src="js/widgets.js"></script>
+	<script src="js/sumario.js"></script>
+  </body>
+</html>
