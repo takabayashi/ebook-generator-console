@@ -52,6 +52,7 @@
               <li><%= link_to 'List Books', books_path %></li>
               <li><%= link_to 'List Wigets', widgets_path %></li>
               <li><%= link_to 'List Templates', book_templates_path %></li>
+              <li><%= link_to 'List Galleries', galleries_path %></li>
             </ul>
           </div><!--/.nav-collapse -->
           <% if user_signed_in? %>
@@ -75,6 +76,7 @@
                 <li><%= link_to 'New Book', new_book_path %></li>
                 <li><%= link_to 'New Widget', new_widget_path %></li>
                 <li><%= link_to 'New Template', new_book_template_path %></li>
+                <li><%= link_to 'New Gallery', new_gallery_path %></li>
               </ul>
               <ul class="nav nav-list">
                 <li class="nav-header">Admin tasks</li>
