@@ -6,6 +6,7 @@
   <thead>
     <tr>
       <th><%= model_class.human_attribute_name(:title) %></th>
+      <th><%= model_class.human_attribute_name(:parameter) %></th>
       <th><%= model_class.human_attribute_name(:book_id) %></th>
       <th><%= model_class.human_attribute_name(:created_at) %></th>
       <th><%=t '.actions', :default => t("helpers.actions") %></th>
@@ -15,6 +16,7 @@
     <% @widgets.each do |widget| %>
       <tr>
         <td><%= link_to widget.title, widget_path(widget) %></td>
+        <td><%=l widget.parameter %></td>
         <td><%= link_to widget.book.title, book_path(widget.book) %><%= %></td>
         <td><%=l widget.created_at.to_date %></td>
         <td>
