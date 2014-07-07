@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140703203040) do
+ActiveRecord::Schema.define(version: 20140707184004) do
 
   create_table "book_templates", force: true do |t|
     t.string   "title"
@@ -46,6 +46,12 @@ ActiveRecord::Schema.define(version: 20140703203040) do
   end
 
   add_index "galleries", ["book_id"], name: "index_galleries_on_book_id"
+
+  create_table "gallery_images", force: true do |t|
+    t.string   "file_name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "publishers", force: true do |t|
     t.string   "name"

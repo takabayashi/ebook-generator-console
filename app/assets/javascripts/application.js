@@ -16,6 +16,8 @@
 //= require turbolinks
 //= require_tree .
 //= require pace/pace
+//= require dropzone
+
 
 var app = app || {
 	books : [],

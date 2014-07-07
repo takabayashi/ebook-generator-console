@@ -19,7 +19,10 @@
     <%= f.label :book_name %><br>
     <%= f.collection_select :book_id, Book.all, :id, :title, prompt: true, :class => 'select_field' %>
   </div>
-  <div class="actions">
+
+      <div class="actions">
+
+
     <%= f.submit %>
   </div>
 <% end %>

@@ -49,4 +49,6 @@ gem 'kaminari'
 gem 'devise'
 gem 'pace-rails'
 gem 'aws-sdk', '~> 1.0'
+gem 'dropzonejs-rails'
+gem 'carrierwave'
 

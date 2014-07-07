@@ -13,6 +13,7 @@
  *= require_tree .
  *= require_self
  *= require pace/pace-theme-center-radar
+ *= require dropzone/dropzone
  */
 
  .welcome{

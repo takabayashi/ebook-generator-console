@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :books
 
+  resources :gallery_images
+
   get '/configurate/:id', to: 'book_configuration#configurate'
   get '/convert/:id', to: 'book_configuration#convert'
   get '/build/:id', to: 'book_configuration#build'
